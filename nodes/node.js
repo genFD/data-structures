@@ -20,19 +20,21 @@ const secondNode = new Node("secondNode");
 firstNode.setNextNode(secondNode);
 console.log(firstNode.getNextNode());
 // ice cream shop that sells three flavors: strawberry, vanilla, and coconut. The signature sundae is made of these three flavors, but our new hires have a hard time remembering the order.
-const strawberryNode = new Node("Berry Tasty");
-const vanillaNode = new Node("Vanilla");
-const coconutNode = new Node("Coconuts for Coconut");
+// const strawberryNode = new Node("Berry Tasty");
+// const vanillaNode = new Node("Vanilla");
+// const coconutNode = new Node("Coconuts for Coconut");
 
 // Now let’s put these ice cream nodes in order. vanilla goes first, followed by strawberry. Finally, coconut goes after strawberry.
-vanillaNode.setNextNode(strawberryNode);
-strawberryNode.setNextNode(coconutNode);
-coconutNode.setNextNode(null);
-
-let currentNode = vanillaNode;
-while (currentNode != null) {
-  console.log(currentNode.data);
-  currentNode = currentNode.getNextNode();
-}
+// vanillaNode.setNextNode(strawberryNode);
+// strawberryNode.setNextNode(coconutNode);
+// coconutNode.setNextNode(null);
+// We will use currentNode to iterate through the nodes
+// let currentNode = vanillaNode;
+// Create a while loop that will only iterate when the currentNode is not null
+// while (currentNode != null) {
+// Inside the while loop, log out the currentNode’s data, and update currentNode to the next node.
+//   console.log(currentNode.data);
+//   currentNode = currentNode.getNextNode();
+// }
 
 module.exports = Node;
